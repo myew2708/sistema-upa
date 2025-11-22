@@ -1,0 +1,131 @@
+<!doctype html>
+
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SmartUPA</title>
+  <style>
+    :root{
+      --bg:#f7f9fb;
+      --green:#0aa64a;
+      --blue:#1e73be;
+      --text:#1b2630;
+      --muted:#596670;
+      --btn-padding:14px 28px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    html,body{
+      background:var(--bg);
+      color:var(--text);
+      margin:0;
+      height:100vh;
+      width:100vw;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    body{
+      background:var(--bg);
+      color:var(--text);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .card{
+      width:100%;
+      height:100vh;
+      background:white;
+      padding:0;
+      margin:0;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+    }
+    .logo{
+      max-width:280px;
+      width:48%;
+      height:auto;
+      margin:0 auto 18px;
+      display:block;
+    }
+    h1{margin:10px 0 6px;font-size:20px;font-weight:600;color:var(--muted)}
+    .unit{
+      display:block;
+      font-size:24px;
+      font-weight:700;
+      margin:8px 0 18px;
+      color:var(--text);
+      letter-spacing:0.6px;
+    }
+    p.lead{margin:0 0 22px;color:var(--muted)}
+    .actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+    .btn{
+      border:0;
+      cursor:pointer;
+      padding:var(--btn-padding);
+      border-radius:10px;
+      font-weight:700;
+      font-size:15px;
+      min-width:160px;
+    }
+    .btn-primary{background:var(--green);color:white}
+    .btn-secondary{background:transparent;border:2px solid var(--blue);color:var(--blue)}
+    .help{
+      position:fixed;
+      right:18px;
+      bottom:18px;
+      width:48px;height:48px;border-radius:50%;
+      background:linear-gradient(180deg,#ffffff,#f0f6ff);
+      display:flex;align-items:center;justify-content:center;
+      box-shadow:0 6px 18px rgba(14,30,90,0.12);
+      font-weight:700;color:var(--blue);font-size:26px;
+      border:2px solid rgba(30,115,190,0.12);
+    }
+
+    @media (max-width:900px){
+      .card{max-width:600px;padding:28px}
+      .logo{max-width:240px}
+      .unit{font-size:22px}
+    }
+    @media (max-width:600px){
+      .card{max-width:90%;padding:22px}
+      .logo{max-width:200px}
+      .unit{font-size:20px}
+    }
+    
+    @media (max-width:420px){
+      .card{padding:20px;border-radius:10px}
+      .logo{width:65%;max-width:220px}
+      .unit{font-size:18px}
+      .btn{min-width:140px;padding:12px 18px}
+    }
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+   <img src="" alt="">
+    <h1>Bem vindo ao site de atendimento da</h1>
+<span class="unit">UNIDADE DE PRONTO ATENDIMENTO</span>
+<p class="lead">Acesse os serviços, agende seu atendimento ou cadastre-se para receber informações.</p>
+
+<div class="actions">
+  <button class="btn btn-primary" onclick="entrar()">ENTRAR</button>
+  <button class="btn btn-secondary" onclick="cadastrar()">CADASTRAR-SE</button>
+</div>
+
+  </main>   
+  
+  <script>
+    function entrar(){
+      // exemplo simples: redireciona para uma página de login (substitua conforme sua app)
+      window.location.href = 'login.html';
+    }
+    function cadastrar(){
+   
+      window.location.href = 'cadastro.html';
+    }
+  </script></body>
+</html>
